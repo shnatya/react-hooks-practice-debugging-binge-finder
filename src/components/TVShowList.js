@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
+import TVShow from "./TVShow"
 
 function TVShowList(props) {
   function mapAllShows() {
@@ -23,3 +24,4 @@ function TVShowList(props) {
 }
 
 export default TVShowList;
+

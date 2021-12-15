@@ -1,10 +1,13 @@
 import React from "react";
 
-function tvShow() {
+function tvShow({selectShow, show}) {
+  function onSelectShow(show){
+    selectShow(show)
+  }
   return (
     <div>
       <br />
-      <img src={props.image.medium} onClick={props.selectShow} alt="" />
+      <img src={show.image.medium} onClick={onSelectShow} alt="" />
     </div>
   );
 }
